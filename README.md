@@ -1,93 +1,89 @@
-# FUTURE_INTERN
-Future Intern – Cybersecurity Internship Tasks
+🛡️ Future Intern – Cybersecurity Internship Repository
 
-Welcome to the official repository for my Cybersecurity Internship at Future Interns.
-This repository contains all tasks, documentation, analyses, and learnings completed throughout the internship.
+Welcome to my official repository for the Future Intern – Cybersecurity Virtual Internship.
+This repo contains all tasks, documentation, reports, screenshots, notes, and proofs of work completed as a part of the internship.
 
-🧑‍💻 About the Internship
+📌 Internship Overview
+Field	Details
+Company	Future Interns
+Domain	Cybersecurity
+Mode	Self-Paced Virtual Internship
+Required Tasks	Minimum 2 for Certificate
+Required Tasks for LoR	Minimum 3
+Start Date	As per Offer Letter
+End Date (Project Submission)	07 January 2026
 
-Company: Future Interns
-Type: Self-Paced Virtual Internship
-Domain: Cybersecurity
-
-Structure & Requirements
-
-Start Date: As per Offer Letter
-
-Domain-Specific Tasks: Complete only Cybersecurity-related tasks
-
-Completion Certificate: Requires a minimum of 2 completed tasks
-
-Letter of Recommendation (LoR): Requires 3 completed tasks
-
-Learning Resources: Fully self-directed (no formal training)
-
-Flexibility: Work anytime — no fixed hours
+This internship focuses on developing hands-on cybersecurity skills using real-world tools, techniques, and intentionally vulnerable applications.
 
 📂 Repository Structure
-FUTURE_CS_01/
+FUTURE_INTERN/
 │
-├── Task1/
+├── Task01/
 │   ├── README.md
+│   ├── report.md
 │   ├── notes.md
-│   ├── findings.txt
 │   ├── screenshots/
-│   └── report.pdf   (final deliverable)
+│   └── Task01.pdf
 │
-├── Task2/
+├── Task02/
 │   ├── README.md
-│   ├── notes.md
-│   ├── logs/
-│   └── report.pdf
+│   └── report.md
 │
-├── Task3/
+├── Task03/
 │   ├── README.md
-│   ├── code/
-│   ├── documentation/
-│   └── report.pdf
+│   └── report.md
 │
-└── README.md  (this file)
+└── README.md   ← (You are here)
 
-📌 Repository Naming Convention (Required)
 
-As per internship guidelines 
+✔ Clean
+✔ Professional
+✔ Internship-friendly structure
 
-Future Interns Cyber Security
-
-:
-
-Each task must follow this format:
-
-FUTURE_CS_01 → Task 1
-
-FUTURE_CS_02 → Task 2
-
-FUTURE_CS_03 → Task 3
-
-✅ Tasks Completed
+🚀 Tasks Completed
 Task No.	Title	Status
-Task 01	Web Application Security Testing	⏳ Ongoing
+Task 01	Web Application Security Testing (OWASP Juice Shop)	✅ Completed
 Task 02	Security Alert Monitoring & Incident Response	⏳ Ongoing
 Task 03	Secure File Sharing System	⏳ Pending
-🎯 Goals
+🔥 Task 01 – Web Application Security Testing (OWASP Juice Shop)
 
-Gain hands-on experience with cybersecurity tools
+This task involved performing manual penetration testing on OWASP Juice Shop to identify and exploit real-world vulnerabilities including:
 
-Strengthen understanding of security vulnerabilities
+✔ SQL Injection (Login Bypass)
 
-Learn through practical, self-driven tasks
+✔ Reflected XSS
+✔ Stored XSS
+✔ DOM-Based XSS
+✔ Broken Authentication
+✔ Weak JWT Verification (Privilege Escalation)
+✔ Insecure Direct Object Reference (IDOR)
+✔ Exposed Administrator Panel
+✔ Error Handling Abuse
+✔ Access Control Bypass
 
-Build a strong cybersecurity portfolio
+📁 Proof of Work Included:
 
-Improve technical reporting & documentation skills
+Screenshots of every vulnerability
 
-🛠️ Tools & Technologies
+Step-by-step exploit documentation
 
-Kali Linux
+Final professional PDF report
+
+Medium Case Study Article
+
+GitHub README & commits
+
+👉 This task is 100% complete with full documentation.
+
+🧰 Tools & Technologies Used
+
+Kali Linux / Parrot OS
 
 Burp Suite
 
 OWASP ZAP
+
+OWASP Juice Shop
 
 SQLMap
 
@@ -95,17 +91,29 @@ Nmap
 
 Wireshark
 
-OWASP Juice Shop / DVWA / WebGoat
+TryHackMe Labs
 
 Python
 
 Git & GitHub
 
-TryHackMe Labs
+🎯 Learning Outcomes
+
+Practical understanding of OWASP Top 10
+
+Hands-on exploitation of real vulnerabilities
+
+Strong reporting/documentation skills
+
+Better understanding of secure coding practices
+
+Familiarity with common attacker techniques
+
+Improved portfolio for cybersecurity roles
 
 👨‍💻 Author
 
 Kshitij Gupta
 Cybersecurity Enthusiast | Future Intern
 
-🔗 LinkedIn: (https://www.linkedin.com/in/kshitijgupta1806/)
+🔗 LinkedIn: https://www.linkedin.com/in/kshitijgupta1806/
