@@ -1,0 +1,199 @@
+✅ TASK 2 REPORT
+Security Alert Monitoring & Incident Response
+
+By: Kshitij Gupta
+Role: Cybersecurity Intern – Future Interns
+
+📌 Introduction
+
+Security Operations Centers (SOCs) are responsible for continuously monitoring systems, detecting suspicious activities, and responding to security incidents in real time.
+
+In this task, I simulated the role of a SOC Analyst by analyzing security logs using a SIEM platform (Splunk). The goal was to identify malicious activities, classify incidents based on severity, and prepare an incident response report with remediation recommendations.
+
+This task helped me understand how real-world SOC teams detect threats and respond effectively.
+
+🛠 Tools & Environment
+
+SIEM Tool: Splunk (Free / Local Installation)
+
+Operating System: Windows
+
+Data Source: Custom simulated security logs
+
+Log Types Analyzed:
+
+Authentication logs
+
+System activity logs
+
+Malware detection alerts
+
+Privilege escalation events
+
+📂 Log Ingestion
+
+Sample security logs were manually uploaded into Splunk and indexed under:
+
+source = SOC_sample.log
+sourcetype = Uncategorized
+
+
+After ingestion, logs were analyzed using Splunk Search Processing Language (SPL).
+
+🔍 Alert Analysis & Findings
+🚨 Incident 1: Brute Force Login Attempt
+
+Search Query:
+
+action=login_failed
+
+
+Observation:
+
+Multiple failed login attempts for user alice
+
+Same external IP: 203.0.113.45
+
+Attempts occurred within a short time window
+
+Classification:
+
+Incident Type: Brute Force Attack
+
+Severity: High
+
+Impact:
+
+Risk of account compromise
+
+Possible credential stuffing attempt
+
+🚨 Incident 2: Malware Detection
+
+Log Evidence:
+
+action=malware_detected threat=Trojan ip=10.0.0.5
+
+
+Classification:
+
+Incident Type: Malware Infection
+
+Severity: Critical
+
+Impact:
+
+System compromise
+
+Possible data exfiltration
+
+Internal network threat
+
+🚨 Incident 3: Unauthorized File Access
+
+Log Evidence:
+
+action=file_accessed file=/etc/passwd ip=10.0.0.5
+
+
+Classification:
+
+Incident Type: Sensitive File Access
+
+Severity: High
+
+Impact:
+
+Exposure of system credentials
+
+Indicates possible privilege abuse
+
+🚨 Incident 4: Privilege Escalation Attempt
+
+Log Evidence:
+
+action=privilege_escalation user=eve ip=10.0.0.5
+
+
+Classification:
+
+Incident Type: Privilege Escalation
+
+Severity: Critical
+
+Impact:
+
+Unauthorized administrative access
+
+Full system compromise risk
+
+📊 Incident Summary Table
+Incident	Type	Severity
+Multiple login failures	Brute Force Attack	High
+Trojan detected	Malware Infection	Critical
+Access to /etc/passwd	Sensitive File Access	High
+Privilege escalation	Privilege Abuse	Critical
+🛡 Incident Response Actions
+Immediate Actions
+
+Block malicious IP addresses
+
+Isolate infected host (10.0.0.5)
+
+Disable compromised user accounts
+
+Reset affected credentials
+
+Containment
+
+Quarantine malware-infected system
+
+Restrict administrative privileges
+
+Monitor lateral movement attempts
+
+Eradication & Recovery
+
+Remove malware
+
+Patch vulnerable services
+
+Restore systems from clean backups
+
+🔐 Remediation Recommendations
+
+Enable Multi-Factor Authentication (MFA)
+
+Implement account lockout policies
+
+Apply least privilege access
+
+Deploy EDR and antivirus monitoring
+
+Regularly audit authentication logs
+
+Continuous SIEM alert tuning
+
+🎯 Conclusion
+
+This task provided hands-on experience with SIEM-based security monitoring and incident response workflows. By analyzing real-style logs in Splunk, I was able to detect brute force attacks, malware activity, privilege escalation, and sensitive file access attempts.
+
+This exercise strengthened my understanding of:
+
+SOC operations
+
+Alert triage
+
+Incident classification
+
+Security log analysis
+
+Incident response lifecycle
+
+👨‍💻 Author
+
+Kshitij Gupta
+Cybersecurity Intern – Future Interns
+🔗 LinkedIn: https://www.linkedin.com/in/kshitijgupta1806
+
+🔗 GitHub: https://github.com/gupta09-oop
