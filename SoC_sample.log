@@ -1,0 +1,7 @@
+2025-09-10 10:01:12 user=alice action=login_failed ip=203.0.113.45
+2025-09-10 10:01:15 user=alice action=login_failed ip=203.0.113.45
+2025-09-10 10:01:20 user=alice action=login_failed ip=203.0.113.45
+2025-09-10 10:02:10 user=bob action=login_success ip=192.168.1.10
+2025-09-10 10:05:44 user=system action=malware_detected threat=Trojan ip=10.0.0.5
+2025-09-10 10:07:30 user=david action=file_accessed file=/etc/passwd ip=10.0.0.5
+2025-09-10 10:08:55 user=eve action=privilege_escalation ip=10.0.0.5
