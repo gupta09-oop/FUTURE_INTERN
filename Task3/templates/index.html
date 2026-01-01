@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure File Portal</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: #e5e7eb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            background: #111827;
+            padding: 30px;
+            border-radius: 10px;
+            width: 420px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        button {
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .encrypt {
+            background: #22c55e;
+        }
+        .download {
+            background: #3b82f6;
+        }
+        .error {
+            color: #f87171;
+            margin-top: 10px;
+        }
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>🔐 Secure File Portal</h2>
+
+    <!-- Encrypt -->
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button class="encrypt">Upload & Encrypt</button>
+    </form>
+
+    {% if file_id %}
+        <p><b>Encrypted File ID:</b></p>
+        <p>{{ file_id }}</p>
+        <a href="/download/{{ file_id }}">
+            <button class="download">Download Encrypted File</button>
+        </a>
+    {% endif %}
+
+    <hr>
+
+    <!-- Decrypt -->
+    <form method="POST" action="/decrypt" enctype="multipart/form-data">
+        <input type="file" name="enc_file" required>
+        <button class="download">Decrypt Uploaded File</button>
+    </form>
+
+    <p style="font-size:12px;color:#9ca3af;">
+        ⚠️ Only upload encrypted (.enc) files downloaded from this portal
+    </p>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+</div>
+
+</body>
+</html>
